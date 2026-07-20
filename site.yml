@@ -1,5 +1,5 @@
-- name: Upgrade server
-  hosts: ldap
+- name: Update & Upgrade
+  hosts: all
   become: yes  # sudo මගින් ක්‍රියාත්මක වීමට මෙය අවශ්‍යයි
   tasks:
 
