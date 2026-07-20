@@ -1,7 +1,12 @@
+name: Upgrade server
+  hosts: all
+  become: yes  # sudo මගින් ක්‍රියාත්මක වීමට මෙය අවශ්‍යයි
+  tasks:
 
-- name: Upgrade
-  tags: upgrade
-  apt:
-    update_cache: yes
-    upgrade: dist
-  when: ansible_facts["distribution"] == "Ubuntu"
+
+  - name: Upgrade
+    tags: upgrade
+    apt:
+      update_cache: yes
+      upgrade: dist
+    when: ansible_facts["distribution"] == "Ubuntu"
