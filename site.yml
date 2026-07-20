@@ -1,1 +1,7 @@
 
+- name: Upgrade
+  tags: upgrade
+  apt:
+    update_cache: yes
+    upgrade: dist
+  when: ansible_facts["distribution"] == "Ubuntu"
