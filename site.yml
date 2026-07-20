@@ -4,8 +4,8 @@
   tasks:
 
 
-  - name: Upgrade
-    tags: upgrade
+  - name: Update & Upgrade
+    tags: Update,Upgrade
     apt:
       update_cache: yes
       upgrade: dist
