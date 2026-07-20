@@ -10,7 +10,7 @@
       update_cache: yes
     when: ansible_facts["distribution"] == "Ubuntu"
 
-   - name: Upgrade
+  - name: Upgrade
     tags: Upgrade
     apt:
       upgrade: dist
